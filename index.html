@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Website Portfolio | Venice</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">VL</span> Venice Luoang</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Venice<br />Web Developer<br />Designer</h1>
+        </div>
+        <p class="section__description">
+          I'm a dedicated web developer with a creative flair and a penchant for
+          turning lines of code into captivating online experiences. My journey
+          in the digital realm began years ago, and I've since honed my skills
+          in front-end and back-end development.
+        </p>
+        <div class="header__btn">
+          <button class="btn" onclick="scrollToContact()">Hire Me Now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/about.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Bit About Me</h2>
+        <p class="section__description">
+          Welcome to the about me section! I'm a passionate web developer with a creative flair 
+          and a knack for turning visions into reality. My journey in web development began with a fascination 
+          for coding and design, and it has evolved into a career where I blend aesthetics with functionality. 
+          With a focus on user experience and a commitment to staying updated with the latest industry trends, 
+          I'm dedicated to creating web solutions that not only meet but exceed expectations.
+        </p>
+        
+        <div class="about__btn">
+          <button class="btn" onclick="scrollToPortfolio()">Explore Portfolio</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container skills__container" id="skills">
+      <h2 class="section__header">Skills and Mastery</h2>
+      <p class="section__description">
+        Here are some of the skills I have mastered. Each skill is represented by a progress bar indicating my proficiency level.
+      </p>
+      <div class="skills__grid">
+        <div class="skills__card">
+          <h4>Web Design</h4>
+          <div class="progress-bar" style="--progress: 89%;">89%</div>
+        </div>
+        <div class="skills__card">
+          <h4>Front-end Development</h4>
+          <div class="progress-bar" style="--progress: 90%;">90%</div>
+        </div>
+        <div class="skills__card">
+          <h4>Back-end Development</h4>
+          <div class="progress-bar" style="--progress: 75%;">75%</div>
+        </div>
+        <div class="skills__card">
+          <h4>UI/UX Design</h4>
+          <div class="progress-bar" style="--progress: 85%;">85%</div>
+        </div>
+        <div class="skills__card">
+          <h4>SEO</h4>
+          <div class="progress-bar" style="--progress: 80%;">80%</div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">My Portfolio</h2>
+      <p class="section__description">
+        Dive into my creative journey! Explore an array of projects showcasing my expertise in web development and design.
+      </p>
+      <div class="portfolio__grid">
+        <div class="portfolio__card">
+          <img src="assets/img1.png" alt="portfolio" />
+          <div class="image-description">HTML/CSS Fitness Website</div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/img2.png" alt="portfolio" />
+          <div class="image-description">PHP & SQL Language Tutoring Website</div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/img3.png" alt="portfolio" />
+          <div class="image-description">Application & Systems Integration Book Website</div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/img4.png" alt="portfolio" />
+          <div class="image-description">Angular JS & Bootstrap Skincare Website</div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/img5.png" alt="portfolio" />
+          <div class="image-description">Wordpress Self-care Website</div>
+        </div>
+        <div class="portfolio__card">
+          <img src="assets/img6.png" alt="portfolio" />
+          <div class="image-description">Vue JS CRUD Booking Website</div>
+        </div>
+         <div class="portfolio__card">
+          <img src="assets/img7.png" alt="portfolio" />
+          <div class="image-description">SEO Optimization and E-commerce Website</div>
+        </div>
+         <div class="portfolio__card">
+          <img src="assets/img8.png" alt="portfolio" />
+          <div class="image-description">Java Netbeans CRUD Flight Ticketing Website</div>
+        </div>
+         <div class="portfolio__card">
+          <img src="assets/img9.png" alt="portfolio" />
+          <div class="image-description">NoSQL Skincare Recommendation Website</div>
+        </div>
+      </div>
+      
+      <section class="section__container service__container" id="service">
+        <h2 class="section__header">My Best Services</h2>
+        <div class="section__description">
+        <p>
+          Discover a spectrum of services tailored to enhance your online presence and meet your digital needs. 
+        </p>
+  </div>
+        <div class="service__grid">
+          <div class="service__card">
+            <span><i class="ri-window-fill"></i></span>
+            <h4>Website Design</h4>
+            <p>
+              We can craft user-friendly interfaces that engage visitors and help you
+              achieve your online goals with minimum efforts.
+            </p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-store-line"></i></span>
+            <h4>E-commerce Solutions</h4>
+            <p>
+              We build secure, scalable, and user-centric online stores that enhance
+              the shopping experience and drive conversions.
+            </p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-smartphone-line"></i></span>
+            <h4>Mobile Development</h4>
+            <p>
+              From iOS to Android, we create apps that deliver seamless performance
+              and keep users coming back for more.
+            </p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-share-fill"></i></span>
+            <h4>Content Marketing</h4>
+            <p>
+              Our services include creating blog posts, videos, and social media
+              content that drives traffic and engagement.
+            </p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-seo-line"></i></span>
+            <h4>SEO</h4>
+            <p>
+              Our SEO strategies are tailored to your specific goals, helping you
+              reach your target audience and grow your online presence.
+            </p>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-share-circle-line"></i></span>
+            <h4>Digital Marketing</h4>
+            <p>
+              From pay-per-click (PPC) advertising to social media marketing, we
+              ensure your brand stands out in the crowded digital landscape.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+    <section class="section__container contact__container" id="contact">
+      <div class="logo">VL</div>
+      <div class="contact__form">
+        <h2 class="section__header">Contact Me</h2>
+        <p class="section__description">
+          Have a project in mind or just want to say hello? Feel free to reach out!
+        </p>
+      </div>
+
+      <div class="contact__form">
+        <form id="contactForm" onsubmit="event.preventDefault(); submitForm();">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+    
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+    
+          <button id="submitBtn" class="btn" type="submit">Submit</button>
+      </div>
+      <div class="contact__socials">
+        <a href="https://twitter.com/venluoang" target="_blank"><i class="ri-twitter-fill"></i></a>
+        <a href="https://instagram.com/vncluoang" target="_blank"><i class="ri-instagram-fill"></i></a>
+        <a href="https://facebook.com/luoangvenice" target="_blank"><i class="ri-facebook-fill"></i></a>
+      </div>
+
+      
+    </section>
+    <footer class="footer">
+      Copyright © 2024 Venice Luoang. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <!-- Add the following script at the bottom of your HTML, before the closing </body> tag -->
+
+
+  </body>
+</html>
